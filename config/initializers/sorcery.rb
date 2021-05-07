@@ -136,11 +136,11 @@ Rails.application.config.sorcery.configure do |config|
   # config.instagram.user_info_mapping = {:email => "username"}
   # config.instagram.access_permissions = ["basic", "public_content", "follower_list", "comments", "relationships", "likes"]
   #
-  # config.github.key = ""
-  # config.github.secret = ""
-  # config.github.callback_url = "http://0.0.0.0:3000/oauth/callback?provider=github"
-  # config.github.user_info_mapping = {:email => "name"}
-  # config.github.scope = ""
+  config.github.key = "56654f573192c61a5175"
+  config.github.secret = "15d8e8be086c83493fa994ad894034215deb8ee8"
+  config.github.callback_url = "http://0.0.0.0:3000/oauth/callback?provider=github"
+  config.github.user_info_mapping = {:email => "name"}
+  config.github.scope = ""
   #
   # config.paypal.key = ""
   # config.paypal.secret = ""
@@ -533,7 +533,7 @@ Rails.application.config.sorcery.configure do |config|
     # Class which holds the various external provider data for this user.
     # Default: `nil`
     #
-    # user.authentications_class =
+    user.authentications_class = Authentication
 
     # User's identifier in the `authentications` class.
     # Default: `:user_id`
